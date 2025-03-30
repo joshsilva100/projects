@@ -1,0 +1,1502 @@
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 4000 time = 74.118000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 8000 time = 319.798000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 707.324000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 1528.901000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 2040.277000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 4000 time = 43.256000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 8000 time = 175.541000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 397.291000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 705.141000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 1107.923000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 4000 time = 91.154000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 8000 time = 408.384000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 909.804000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 1641.116000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 2780.036000 type = 1 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 4000 time = 0.178000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 8000 time = 0.384000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 0.620000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 0.707000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 0.900000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 4000 time = 33.300000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 8000 time = 144.831000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 306.811000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 552.095000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 854.563000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 4000 time = 53.202000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 8000 time = 267.265000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 724.565000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 1494.046000 type = 2 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 2601.774000 type = 2 order = 2
+Goodbye
+
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 6000 time = 87.249000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 355.789000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 665.861000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 995.270000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 24000 time = 1517.424000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 6000 time = 75.318000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 311.923000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 579.351000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 881.895000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 24000 time = 1334.637000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 6000 time = 89.141000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 323.333000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 639.166000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 1119.637000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 24000 time = 1541.707000 type = 3 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 6000 time = 97.034000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 389.237000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 703.932000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 1154.840000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 24000 time = 1751.313000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 6000 time = 82.702000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 338.153000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 609.607000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 989.347000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 24000 time = 1628.345000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 6000 time = 84.196000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 12000 time = 414.814000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 16000 time = 660.735000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 20000 time = 1126.203000 type = 4 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 24000 time = 1766.860000 type = 4 order = 2
+Goodbye
+
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 250000 time = 200.856000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 500000 time = 426.707000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 750000 time = 634.422000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 1000000 time = 864.611000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 1250000 time = 1081.790000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 250000 time = 191.491000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 500000 time = 399.239000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 750000 time = 623.962000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 1000000 time = 896.519000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 1250000 time = 1108.143000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 250000 time = 444.535000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 500000 time = 977.648000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 750000 time = 1492.780000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 1000000 time = 2048.559000 type = 5 order = 2
+Goodbye
+Lab3 list size is 1. Possible commands:
+MP3: ADDTAIL priority
+SORT sort# direction
+PRINTMP3
+
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+CLEAN
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+
+
+Sorting: n = 1250000 time = 2668.213000 type = 5 order = 2
+Goodbye

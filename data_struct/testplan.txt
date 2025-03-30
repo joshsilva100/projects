@@ -1,0 +1,71 @@
+/* Test Plan
+ * Joshua Silva
+ * ECE 2230 
+ * Spring 2024
+ * MP3
+ *
+ *
+ * Purpose: Walk through test cases, and what they are testing, to prove program functionality.
+ * 
+ * Assumptions: That all MP1 & MP2 functions work, and all MP3 sort functions have the correct time complexity
+ *
+ */ 
+
+Notes: 
+*Look at testlog.txt for outputs & answers to trends in sort types 
+*Can use runner.sh for several ./geninput runs
+
+*Bubble Sort: 
+ 	*Will use ./geninput list_size data_method sort_type sort_order | ./lab3 10 
+	*Will use list_size of 4000, 8000, 12000, 16000, 20000 
+	*Will use data_method of 1, 2, 3 for descending, ascending, and random input list 
+	*Will use sort_type '1' for Bubble Sort 
+	*Will use sort_order '2' for an output list of ascending order 
+
+	*Input List will be sorted using modified Standish Bubble Sort 
+	*Output will show that input lists can be sorted no matter the original order 
+	*Expected O(n^2)
+
+*Insertion Sort: 
+ 	*Will use ./geninput list_size data_method sort_type sort_order | ./lab3 10 
+	*Will use list_size of 4000, 8000, 12000, 16000, 20000 
+	*Will use data_method of 1, 2, 3 for descending, ascending, and random input list 
+	*Will use sort_type '2' for Insertion Sort 
+	*Will use sort_order '2' for an output list of ascending order 
+
+	*Input List will be sorted using modified Standish Insertion Sort 
+	*Output will show that input lists can be sorted no matter the original order 
+	*Expected O(n^2)
+
+*Recursive Selection Sort: 
+ 	*Will use ./geninput list_size data_method sort_type sort_order | ./lab3 10 
+	*Will use list_size of 6000, 12000, 18000, 24000, 30000 
+	*Will use data_method of 1, 2, 3 for descending, ascending, and random input list 
+	*Will use sort_type '3' for Recursive Selection Sort 
+	*Will use sort_order '2' for an output list of ascending order 
+
+	*Input List will be sorted using modified Standish Recursive Selection Sort 
+	*Output will show that input lists can be sorted no matter the original order 
+	*Expected O(n^2)
+
+*Iterative Selection Sort: 
+ 	*Will use ./geninput list_size data_method sort_type sort_order | ./lab3 10 
+	*Will use list_size of 6000, 12000, 18000, 24000, 30000 
+	*Will use data_method of 1, 2, 3 for descending, ascending, and random input list 
+	*Will use sort_type '4' for Iterative Selection Sort 
+	*Will use sort_order '2' for an output list of ascending order 
+
+	*Input List will be sorted using modified Standish Iterative Selection Sort 
+	*Output will show that input lists can be sorted no matter the original order 
+	*Expected O(n^2)
+
+*Merge Sort: 
+ 	*Will use ./geninput list_size data_method sort_type sort_order | ./lab3 10 
+	*Will use list_size of 250000, 500000, 750000, 1000000, 1250000 
+	*Will use data_method of 1, 2, 3 for descending, ascending, and random input list 
+	*Will use sort_type '5' for Merge Sort 
+	*Will use sort_order '2' for an output list of ascending order 
+
+	*Input List will be sorted using modified Standish Merge Sort 
+	*Output will show that input lists can be sorted no matter the original order 
+	*Expected O(nlogn)
