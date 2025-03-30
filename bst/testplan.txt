@@ -1,0 +1,51 @@
+/* Test Plan
+ * Joshua Silva
+ * ECE 2230 
+ * Spring 2024
+ * MP5
+ *
+ *
+ * Purpose: Walk through test cases, and what they are testing, to prove program functionality.
+ * 
+ * Assumptions: That the helper functions work properly, such as internal path length, access, num_rotations etc. 
+ *				Also, that bst_construct & bst_destruct work properly
+ *
+ */ 
+
+Notes: Look at Performance Evaluation for tests regarding large trees & testing successful search times
+
+*Unit Driver 0: 
+	*Will prove that inserting Nodes works for both Search Policies 
+	*Ignore remove node lines, as the remove function was not done due to Lab Manual Instructions
+
+	*Expect to see a tree that maintains BST rules. AVL balanced should be maintained when AVL search policy is used
+
+*Unit Driver 3: 
+ 	*Will prove that Tree will replace node if given a key that matches pre-existing node 
+	*Insert 10 twice
+	*Ignore remove node lines, as the remove function was not done due to Lab Manual Instructions
+
+	*Expect to see only one node, 10
+
+*Unit Driver 4: 
+ 	*Will prove that Tree can rotate root for an AVL tree properly, meaning maintaining BST rules and AVL balance 
+	*Does not use user driver function, instead uses code to create a tree and state the IPL & rotations 
+		*Done for better analysis in the Test Log, and since we don't use the remove function
+
+	*Expect to see a balanced AVL tree, should look identical to ECE 2230 HW#6 Problem #8's Solution
+
+*Unit Driver 5: 
+	*Will prove that AVL can balance a left-heavy worst case tree, O(n), while BST will stay in worst case
+	*Does not use user driver function, instead uses code to create a tree and state the IPL & rotations 
+		*Done for better analysis in the Test Log, and since we don't use the remove function
+
+	*Expect to see worst case for BST, and a balance tree for AVL
+
+*Unit Driver 6: 
+	*Will prove that Tree can handle extreme values for key. 
+	*Array used for insertion will go from INT_MIN + 1 to INT_MAX - 1, the acceptable range for the tree according to 
+	 bst_debug_validate_rec "if(N->key <= min || N->key >= max) return FALSE;" bst.c line 576
+	*Does not use user driver function, instead uses code to create a tree and state the IPL & rotations 
+		*Done for better analysis in the Test Log, and since we don't use the remove function
+
+	*Expect to see a Tree following BST rules, and AVL balance if AVL policy is used

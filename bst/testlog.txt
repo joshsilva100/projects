@@ -1,0 +1,260 @@
+/* Test Log
+ * Joshua Silva
+ * ECE 2230 
+ * Spring 2024
+ * MP5
+ *
+ *
+ * Purpose: Walk through test cases output to prove program functionality. Will only show relevant 
+ * data to reader.
+ * 
+ * Assumptions: That the reader has read Test Plan, and understands the aim of each test case.
+ *
+ */ 
+ 
+ *testoutput0_bst.txt & testoutput_avl.txt: 
+ 	*Related to the "Unit Driver 0" test case.
+ 	*Proves that bst.c can handle inserting nodes into a BST & AVL Tree
+ 	
+ 	//Output 
+	BST Search Policy 
+	...
+	             56
+        48
+                       46
+                  44
+                       42
+             40
+   32
+                  28
+             24
+        16
+                  12
+              8
+                   4
+
+           /-------32-------------\ 		<- Notice for BST, the Tree follows BST rules but is not balanced
+     /----16-\         /----------48-\ 
+  /--8-\     24-\     40----\        56
+  4    12       28        /-44-\ 
+                         42    46
+...
+
+	AVL Search Policy 
+	...
+	                 56-0
+          48-2
+                        46-0
+                 44-1
+                        42-0
+   40-3
+                        32-0
+                 28-1
+                        24-0
+          16-2
+                        12-0
+                  8-1
+                         4-0
+
+           /----------40----------\ 		<- Notice how for AVL, the root is different and the Tree is balanced
+     /----16----\            /----48-\ 
+  /--8-\      /-28-\      /-44-\     56
+  4    12    24    32    42    46 
+  ...
+	
+
+
+
+ *testoutput3.txt: 
+ 	*Related to the "Unit Driver 3" test case.
+ 	*Proves that bst.c can handle replacing a pre-existing key with a matching new key when prompted by user
+ 	
+ 	//Output 
+	Inserting 2 items into tree 
+	//Note: This is inserting 10 for the first time, only one node as output
+	...
+	10 <-Ugly Print
+
+	10 <-Pretty Print
+	... 
+	//Note: This is inserting 10 again, notice how the tree still only has node
+	10 <-Ugly Print
+
+	10 <-Pretty Print
+	
+	
+
+	
+
+
+*testoutput4.txt: 
+	*Related to the "Unit Driver 4" test case.
+	*Proves that bst.c can handle boundary of rotating root of an AVL tree
+	
+	//Output 
+	...
+	                        30-0
+                 28-1
+          26-2
+                 24-0
+   22-3
+                        20-0
+                 14-1
+                        12-0
+           6-2
+                         5-0
+                  4-1
+                         1-0
+
+           /----------22----\ 			<-Root has changed from 14 to 6 to 22
+     /-----6----\         /-26-\ 
+  /--4-\      /-14-\     24    28-\ 
+  1     5    12    20             30
+Internal Path Length of tree is 25 <-Matches calculation, 1(0) + 2(1) + 4(2) + 5(3) = 25
+# of Rotations of tree is 7 <- Matches expected rotations, LL,RL,RR,RR,RR,RR
+	
+
+
+
+ *testoutput5_bst.txt & testoutput5_avl.txt: 
+ 	*Related to the "Unit Driver 5" test case.
+ 	*Proves that bst.c can handle a worst-case tree. Search should be O(n) for BST & O(logn) for AVL
+ 	
+ 	//Output 
+	BST Search Policy 
+	//Note: Notice how the Tree looks like a sequential list, which is O(n). Without balancing, the tree 
+	//search cannot utilize the advantage of BSTs, which is splitting the search in two directions
+	...
+	   20
+        19
+             18
+                  17
+                       16
+                            15
+                                 14
+                                      13
+                                           12
+                                                11
+                                                     10
+                                                           9
+                                                                8
+                                                                     7
+                                                                          6
+                                                                               5
+                                                                                    4
+                                                                                         3
+                                                                                              2
+                                                                                                   1
+                                                                                                        0
+
+                                                           /-20
+                                                        /-19
+                                                     /-18
+                                                  /-17
+                                               /-16
+                                            /-15
+                                         /-14
+                                      /-13
+                                   /-12
+                                /-11
+                             /-10
+                          /--9
+                       /--8
+                    /--7
+                 /--6
+              /--5
+           /--4
+        /--3
+     /--2
+  /--1
+  0
+Internal Path Length of tree is 210
+...
+
+	AVL Search Policy
+	...
+	                        20-0
+                 19-1
+                        18-0
+          17-2
+                        16-0
+                 15-1
+                        14-0
+   13-4
+                               12-0
+                        11-1
+                               10-0
+                  9-2
+                                8-0
+                         7-1
+                                6-0
+           5-3
+                         4-0
+                  3-2
+                                2-0
+                         1-1
+                                0-0
+
+                 /----------------------13----------\ 
+           /-----5----------\                  /----17----\ 
+     /-----3-\         /-----9----\         /-15-\      /-19-\ 
+  /--1-\      4     /--7-\      /-11-\     14    16    18    20
+  0     2           6     8    10    12
+//Note: In comparison, notice how the search, even in worst case, is relatively O(logn) for AVL, as it balances the tree
+Internal Path Length of tree is 58
+# of Rotations of tree is 16
+	
+
+
+
+
+ *testoutput6_bst.txt & testoutput6_avl.txt: 
+ 	*Related to the "Unit Driver 6" test case.
+ 	*Proves that bst.c can handle extreme int values for keys, from INT_MIN + 1 to INT_MAX - 1
+ 	
+ 	//Output 
+	BST Search Policy
+	...
+	                                        2147483646
+                                   1610612733
+                              1073741823
+                         536870911
+                        0
+               -536870912
+          -1073741824
+     -1610612736
+-2147483647
+
+-2147483647-\ 
+   -1610612736-\ 
+      -1073741824-\ 
+         -536870912-\ 
+              0-\ 
+               536870911-\ 
+                  1073741823-\ 
+                     1610612733-\ 
+                        2147483646
+//Note: BST Tree shown above is following BST rules, even with extreme values
+Internal Path Length of tree is 36 
+...
+
+AVL Search Policy 
+...
+                     2147483646-0
+              1610612733-1
+                     1073741823-0
+       536870911-2
+                  0-0
+-536870912-3
+              -1073741824-0
+       -1610612736-1
+              -2147483647-0
+
+     /------536870912----\ 
+  /---1610612736-\      /536870911----\ 
+-2147483647   -1073741824     0     /1610612733-\ 
+                  1073741823   2147483646
+//Note: Despite pretty_print not looking "pretty." The output shows that AVL is able to balance extreme values
+Internal Path Length of tree is 16
+# of Rotations of tree is 5
+	
