@@ -1,0 +1,46 @@
+/* Test Plan
+ * Joshua Silva
+ * ECE 2230 
+ * Spring 2024
+ * MP4
+ *
+ *
+ * Purpose: Walk through test cases, and what they are testing, to prove program functionality.
+ * 
+ * Assumptions: That all functions in mem.c are working properly. Will use default search location & policy unless 
+ * stated otherwise. Default is HEAD_FIRST and FIRST_FIT
+ *
+ */ 
+
+Notes: 
+*Look at testlog.txt for outputs 
+*Look at Perform_Eval.pdf for detailed conversation about Performance & results of Unit Driver 4
+
+*Unit Driver 0: 
+	*Will prove that user can do a simple allocation of 16 bytes and free it as well
+
+	*Expected to see a successful malloc and free that returns everything back to the heap
+
+*Unit Driver 1: 
+ 	*Will prove that user can do allocate various parts of a page, to reveal an empty free list, then allocate one more time 
+	and free all allocations
+
+	*Expected to see an empty page when prompted, and all frees lead to no leaks possible in the heap
+
+*Unit Driver 2: 
+ 	*Will test allocating a whole page, and a page minus one chunk
+
+	*Expected to see empty free list for both allocations due to memory still needing a header chunk
+
+*Unit Driver 3: 
+	*Will prove that user can request more than one page
+
+	*Expected to see matching free blocks to amount of allocations requested. And pages requested to match total bytes
+
+*Unit Driver 4: 
+	*Will prove that user can randomly allocate and free memory, with heap still working. Will use this to 
+	conduct performance evaluation and test search location/policy 
+	*See Performance Evaluation PDF for more detailed conversation about testing
+
+	*Expected to see full functionality of heap, with memory being allocated depending on search location & policy 
+	and all memory will return to heap with no leaks

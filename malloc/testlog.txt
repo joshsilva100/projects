@@ -1,0 +1,360 @@
+/* Test Log
+ * Joshua Silva
+ * ECE 2230 
+ * Spring 2024
+ * MP4
+ *
+ *
+ * Purpose: Walk through test cases output to prove program functionality. Will only show relevant 
+ * data to reader.
+ * 
+ * Assumptions: That the reader has read Test Plan, and understands the aim of each test case.
+ *
+ */ 
+ 
+ *testoutput0.txt: 
+ 	*Related to the "Unit Driver 0" test case. 
+ 	*Proves that mem.c can handle a simple 16 byte allocation and free
+ 	
+ 	//Output 
+	First-fit search policy starting at head without coalescing
+
+	----- Begin unit driver 0 -----
+	string length=15
+	:hello world 15c:
+
+	Free list after first allocation
+
+			MP4 Heap Memory Statistics
+	----------------------------------------------------
+
+		Number of blocks in free list: 1
+		Min: 4048
+		Max: 4048
+		Average: 4064
+		Total bytes in free list: 4064
+		Number of sbrk calls: 1
+		Number of requested pages: 1
+		Heap status:  heap is in-use -- leaks are possible
+
+	p=0x63ee8db75020, size=0, end=0x63ee8db75020, next=0x63ee8ef75000 <-- dummy
+	p=0x63ee8ef75000, size=253, end=0x63ee8ef75fd0, next=0x63ee8db75020 
+
+	Free list after first free
+	unit driver 0 has returned all memory to free list
+
+			MP4 Heap Memory Statistics
+	----------------------------------------------------
+
+		Number of blocks in free list: 2
+		Min: 16
+		Max: 4048
+		Average: 2048
+		Total bytes in free list: 4096
+		Number of sbrk calls: 1
+		Number of requested pages: 1
+		Heap status:  all memory is in the heap -- no leaks are possible
+
+	p=0x63ee8db75020, size=0, end=0x63ee8db75020, next=0x63ee8ef75fe0 <-- dummy
+	p=0x63ee8ef75fe0, size=1, end=0x63ee8ef75ff0, next=0x63ee8ef75000 
+	p=0x63ee8ef75000, size=253, end=0x63ee8ef75fd0, next=0x63ee8db75020 
+
+	----- End unit driver 0 -----
+
+
+
+ *testoutput1.txt: 
+ 	*Related to the "Unit Driver 1" test case. 
+ 	*Proves that nunit calculations are correct and we can allocate a whole page
+ 	
+ 	//Output 
+	First-fit search policy starting at head without coalescing
+
+	----- Begin unit driver 1 -----
+	There are 256 units per page, and the size of Chunk is 16 bytes
+	first: 496 bytes (31 units) p=0x636e0a582e10 
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a582000 <-- dummy
+	p=0x636e0a582000, size=223, end=0x636e0a582df0, next=0x636e0a3ec020 
+	second: 2032 bytes (127 units) p=0x636e0a582610 
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a582000 <-- dummy
+	p=0x636e0a582000, size=95, end=0x636e0a5825f0, next=0x636e0a3ec020 
+	third: 1520 bytes (95 units) p=0x636e0a582010 
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a3ec020 <-- dummy
+	unit driver 1: above Mem_print shows empty free list
+	fourth: 1008 bytes (63 units) p=0x636e0a583c10 
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a583000 <-- dummy
+	p=0x636e0a583000, size=191, end=0x636e0a583bf0, next=0x636e0a3ec020 
+	first free of 1/8 a page p=0x636e0a582e10 
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a582e00 <-- dummy
+	p=0x636e0a582e00, size=31, end=0x636e0a582ff0, next=0x636e0a583000 
+	p=0x636e0a583000, size=191, end=0x636e0a583bf0, next=0x636e0a3ec020 
+	second free of 3/8 a page p=0x636e0a582010 
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a582000 <-- dummy
+	p=0x636e0a582000, size=95, end=0x636e0a5825f0, next=0x636e0a582e00 
+	p=0x636e0a582e00, size=31, end=0x636e0a582ff0, next=0x636e0a583000 
+	p=0x636e0a583000, size=191, end=0x636e0a583bf0, next=0x636e0a3ec020 
+	third free of 1/2 a page p=0x636e0a582610 
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a582600 <-- dummy
+	p=0x636e0a582600, size=127, end=0x636e0a582df0, next=0x636e0a582000 
+	p=0x636e0a582000, size=95, end=0x636e0a5825f0, next=0x636e0a582e00 
+	p=0x636e0a582e00, size=31, end=0x636e0a582ff0, next=0x636e0a583000 
+	p=0x636e0a583000, size=191, end=0x636e0a583bf0, next=0x636e0a3ec020 
+	fourth free of 1/4 a page p=0x636e0a583c10
+	unit driver 1 has returned all memory to free list
+	p=0x636e0a3ec020, size=0, end=0x636e0a3ec020, next=0x636e0a583c00 <-- dummy
+	p=0x636e0a583c00, size=63, end=0x636e0a583ff0, next=0x636e0a582600 
+	p=0x636e0a582600, size=127, end=0x636e0a582df0, next=0x636e0a582000 
+	p=0x636e0a582000, size=95, end=0x636e0a5825f0, next=0x636e0a582e00 
+	p=0x636e0a582e00, size=31, end=0x636e0a582ff0, next=0x636e0a583000 
+	p=0x636e0a583000, size=191, end=0x636e0a583bf0, next=0x636e0a3ec020 
+
+			MP4 Heap Memory Statistics
+	----------------------------------------------------
+
+		Number of blocks in free list: 5
+		Min: 496
+		Max: 3056
+		Average: 1638
+		Total bytes in free list: 8192
+		Number of sbrk calls: 2
+		Number of requested pages: 2
+		Heap status:  all memory is in the heap -- no leaks are possible
+
+
+	----- End unit test driver 1 -----
+
+	
+
+
+*testoutput2.txt: 
+	*Related to the "Unit Driver 2" test case. 
+	*Proves program can handle special case of requesting whole page & requesting 1 chunk less than is available in free block
+	
+	//Output 
+	First-fit search policy starting at head without coalescing
+
+	----- Begin unit driver 2 -----
+	There are 256 units per page, and the size of Chunk is 16 bytes
+	first: 4080 bytes (255 units) p=0x588a9e851010 
+	p=0x588a9d86b020, size=0, end=0x588a9d86b020, next=0x588a9d86b020 <-- dummy
+	unit driver 2: above Mem_print shows empty free list due to requesting full page (exact fit)
+	second: 4064 bytes (254 units) p=0x588a9e852010 
+	p=0x588a9d86b020, size=0, end=0x588a9d86b020, next=0x588a9d86b020 <-- dummy
+	unit driver 2: above Mem_print shows empty free list due to memory requiring a header chunk (exact fit)
+
+			MP4 Heap Memory Statistics
+	----------------------------------------------------
+
+		Number of blocks in free list: 2
+		Min: 4080
+		Max: 4080
+		Average: 4096
+		Total bytes in free list: 8192
+		Number of sbrk calls: 2
+		Number of requested pages: 2
+		Heap status:  all memory is in the heap -- no leaks are possible
+
+	p=0x588a9d86b020, size=0, end=0x588a9d86b020, next=0x588a9e852000 <-- dummy
+	p=0x588a9e852000, size=255, end=0x588a9e852ff0, next=0x588a9e851000 
+	p=0x588a9e851000, size=255, end=0x588a9e851ff0, next=0x588a9d86b020 
+
+	----- End unit test driver 2 -----
+
+
+
+ *testoutput3.txt: 
+ 	*Related to the "Unit Driver 3" test case. 
+ 	*Proves that user can request more than one page
+ 	
+ 	//Output 
+	First-fit search policy starting at head without coalescing
+
+	----- Begin unit driver 3 -----
+	There are 256 units per page, and the size of Chunk is 16 bytes
+	first: 4080 bytes (255 units) p=0x5c4eb76db010 
+	p=0x5c4eb689b020, size=0, end=0x5c4eb689b020, next=0x5c4eb689b020 <-- dummy
+	unit driver 3: above Mem_print shows empty free list due to requesting full page (exact fit)
+	second: 8176 bytes (511 units) p=0x5c4eb76dc010 
+	p=0x5c4eb689b020, size=0, end=0x5c4eb689b020, next=0x5c4eb689b020 <-- dummy
+	unit driver 3: above Mem_print shows empty free list due to requesting two full pages (exact fit)
+	third: 20464 bytes (1279 units) p=0x5c4eb76de010 
+	p=0x5c4eb689b020, size=0, end=0x5c4eb689b020, next=0x5c4eb689b020 <-- dummy
+	unit driver 3: above Mem_print shows empty free list due to requesting five full pages (exact fit)
+	fourth: 40944 bytes (2559 units) p=0x5c4eb76e3010 
+	p=0x5c4eb689b020, size=0, end=0x5c4eb689b020, next=0x5c4eb689b020 <-- dummy
+	unit driver 3: above Mem_print shows empty free list due to requesting ten full pages (exact fit)
+
+			MP4 Heap Memory Statistics
+	----------------------------------------------------
+
+		Number of blocks in free list: 4
+		Min: 4080
+		Max: 40944
+		Average: 18432
+		Total bytes in free list: 73728
+		Number of sbrk calls: 4
+		Number of requested pages: 18
+		Heap status:  all memory is in the heap -- no leaks are possible
+
+	unit driver 3: above Mem_stats shows 18 requested pages with 4 calls for more memory.
+	p=0x5c4eb689b020, size=0, end=0x5c4eb689b020, next=0x5c4eb76e3000 <-- dummy
+	p=0x5c4eb76e3000, size=2559, end=0x5c4eb76ecff0, next=0x5c4eb76de000 
+	p=0x5c4eb76de000, size=1279, end=0x5c4eb76e2ff0, next=0x5c4eb76dc000 
+	p=0x5c4eb76dc000, size=511, end=0x5c4eb76ddff0, next=0x5c4eb76db000 
+	p=0x5c4eb76db000, size=255, end=0x5c4eb76dbff0, next=0x5c4eb689b020 
+
+	----- End unit test driver 3 -----
+
+
+
+
+ *testoutput4.txt: 
+ 	*Related to the "Unit Driver 4" test case. 
+ 	*Proves that user can allocate and free at will 
+	*An example is given of output, see Performance Evaulation pdf for more testing
+ 	
+ 	//Example Output 
+	First-fit search policy starting at head without coalescing
+
+	----- Begin unit driver 4 -----
+	There are 256 units per page, and the size of Chunk is 16 bytes
+	first: 205 bytes (12 units) p=0x5d5397bd4f30 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4000 <-- dummy
+	p=0x5d5397bd4000, size=241, end=0x5d5397bd4f10, next=0x5d539753c020 
+	unit driver 4: above Mem_print shows free list due to requesting 2 random
+	second: 427 bytes (26 units) p=0x5d5397bd4d70 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4000 <-- dummy
+	p=0x5d5397bd4000, size=213, end=0x5d5397bd4d50, next=0x5d539753c020 
+	unit driver 4: above Mem_print shows free list with 4 random
+	1st free of 4 random p=0x5d5397bd4d70 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4d60 <-- dummy
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=213, end=0x5d5397bd4d50, next=0x5d539753c020 
+	third: 1371 bytes (85 units) p=0x5d5397bd4800 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4d60 <-- dummy
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	unit driver 4: above Mem_print shows 50/4 random
+	2nd free of 50/4 random p=0x5d5397bd4800 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd47f0 <-- dummy
+	p=0x5d5397bd47f0, size=86, end=0x5d5397bd4d50, next=0x5d5397bd4d60 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	fourth: 94 bytes (5 units) p=0x5d5397bd4d00 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd47f0 <-- dummy
+	p=0x5d5397bd47f0, size=79, end=0x5d5397bd4ce0, next=0x5d5397bd4d60 
+	unit driver 4: above Mem_print shows free list due to requesting 1 random
+	3rd free of 1 random p=0x5d5397bd4d00 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4cf0 <-- dummy
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=79, end=0x5d5397bd4ce0, next=0x5d5397bd4d60 
+	4th free of 2 random p=0x5d5397bd4f30 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4f20 <-- dummy
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=79, end=0x5d5397bd4ce0, next=0x5d5397bd4d60 
+	fifth: 538 bytes (33 units) p=0x5d5397bd4ad0 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4f20 <-- dummy
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=44, end=0x5d5397bd4ab0, next=0x5d5397bd4d60 
+	unit driver 4: above Mem_print shows free list due to requesting 5 random
+	sixth: 316 bytes (19 units) p=0x5d5397bd4980 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4f20 <-- dummy
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	unit driver 4: above Mem_print shows free list with 3 random
+	5th free of 3 random p=0x5d5397bd4980 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=126, end=0x5d5397bd47e0, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4970 <-- dummy
+	p=0x5d5397bd4970, size=20, end=0x5d5397bd4ab0, next=0x5d5397bd4f20 
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	7th: 622 bytes (38 units) p=0x5d5397bd4580 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4970 <-- dummy
+	p=0x5d5397bd4970, size=20, end=0x5d5397bd4ab0, next=0x5d5397bd4f20 
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=86, end=0x5d5397bd4560, next=0x5d539753c020 
+	unit driver 4: above Mem_print shows 23/4 random
+	6th free of 23/4 random p=0x5d5397bd4580 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4570 <-- dummy
+	p=0x5d5397bd4570, size=39, end=0x5d5397bd47e0, next=0x5d5397bd4970 
+	p=0x5d5397bd4970, size=20, end=0x5d5397bd4ab0, next=0x5d5397bd4f20 
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=86, end=0x5d5397bd4560, next=0x5d539753c020 
+	8th: 94 bytes (5 units) p=0x5d5397bd4790 
+	p=0x5d5397bd4970, size=20, end=0x5d5397bd4ab0, next=0x5d5397bd4f20 
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=86, end=0x5d5397bd4560, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4570 <-- dummy
+	p=0x5d5397bd4570, size=32, end=0x5d5397bd4770, next=0x5d5397bd4970 
+	unit driver 4: above Mem_print shows free list due to requesting 1 random
+	7th free of 1 random p=0x5d5397bd4790 
+	p=0x5d5397bd4970, size=20, end=0x5d5397bd4ab0, next=0x5d5397bd4f20 
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=86, end=0x5d5397bd4560, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4780 <-- dummy
+	p=0x5d5397bd4780, size=6, end=0x5d5397bd47e0, next=0x5d5397bd4570 
+	p=0x5d5397bd4570, size=32, end=0x5d5397bd4770, next=0x5d5397bd4970 
+	8th free of 5 random p=0x5d5397bd4ad0 
+	p=0x5d5397bd4970, size=20, end=0x5d5397bd4ab0, next=0x5d5397bd4f20 
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=86, end=0x5d5397bd4560, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4ac0 <-- dummy
+	p=0x5d5397bd4ac0, size=34, end=0x5d5397bd4ce0, next=0x5d5397bd4780 
+	p=0x5d5397bd4780, size=6, end=0x5d5397bd47e0, next=0x5d5397bd4570 
+	p=0x5d5397bd4570, size=32, end=0x5d5397bd4770, next=0x5d5397bd4970 
+
+			MP4 Heap Memory Statistics
+	----------------------------------------------------
+
+		Number of blocks in free list: 9
+		Min: 96
+		Max: 1376
+		Average: 455
+		Total bytes in free list: 4096
+		Number of sbrk calls: 1
+		Number of requested pages: 1
+		Heap status:  all memory is in the heap -- no leaks are possible
+
+	p=0x5d5397bd4970, size=20, end=0x5d5397bd4ab0, next=0x5d5397bd4f20 
+	p=0x5d5397bd4f20, size=13, end=0x5d5397bd4ff0, next=0x5d5397bd4cf0 
+	p=0x5d5397bd4cf0, size=6, end=0x5d5397bd4d50, next=0x5d5397bd47f0 
+	p=0x5d5397bd47f0, size=23, end=0x5d5397bd4960, next=0x5d5397bd4d60 
+	p=0x5d5397bd4d60, size=27, end=0x5d5397bd4f10, next=0x5d5397bd4000 
+	p=0x5d5397bd4000, size=86, end=0x5d5397bd4560, next=0x5d539753c020 
+	p=0x5d539753c020, size=0, end=0x5d539753c020, next=0x5d5397bd4ac0 <-- dummy
+	p=0x5d5397bd4ac0, size=34, end=0x5d5397bd4ce0, next=0x5d5397bd4780 
+	p=0x5d5397bd4780, size=6, end=0x5d5397bd47e0, next=0x5d5397bd4570 
+	p=0x5d5397bd4570, size=32, end=0x5d5397bd4770, next=0x5d5397bd4970 
+	unit driver 4: It takes 0.162000 ms to allocate and free this combination
+
+	----- End unit test driver 4 -----
