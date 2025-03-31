@@ -4,9 +4,9 @@
  * Purpose: To render triangles from an input .ply file, outputs to a PPM file
  *
  * Assumptions: User inputs a .ply that plots triangles, so faces always have 3 points. 
- * 		          User knows that camera defaults to <1,0,0>, their input only rotates the camera
+ * 		User knows that camera defaults to <1,0,0>, their input only rotates the camera
  *
- * The program accepts one command line argument, including the name of the file and angles (Ex. 'file.ply 90 -45 20')
+ * The program accepts one command line argument, including the name of the file and rotation angles (Ex. 'file.ply 90 -45 20')
  */ 
  
 #include <stdio.h> 
