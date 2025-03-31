@@ -1,4 +1,9 @@
-/* huffTree.c - Huffman Compression and Decompression */
+/* huffMain.c 
+ * Huffman Compression and Decompression 
+ * Andrew Reder & Joshua Silva 
+ * 
+ * Purpose: Handle Huffman Compression & Decompression. Call on huffTree.c to create the Huffman Tree from input file & output to compressed/decompressed file (.huff)
+ */
 
 #include "huffTree.h"
 
