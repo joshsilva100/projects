@@ -1,7 +1,8 @@
 /* huffTree.c
- * Huffman Tree
+ * Huffman Tree 
+ * Andrew Reder & Joshua Silva
  *
- * Purpose: To compress/decompress a file, specifically golfcore.ppm, using Huffman
+ * Purpose: To create the Huffman Tree from input file, for later use in compression/decompression
  *
  * Assumptions: User knows that code uses Huffman method
  *
