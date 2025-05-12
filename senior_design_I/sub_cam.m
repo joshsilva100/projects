@@ -1,71 +1,109 @@
-%% ECE 4951 Spring 2025 Project 2 - Image Processing 
+%% ECE 4950 Spring 2025 - Golf Board Image Processing
 
-%% Set up camera 
-camName = 'Brio 101'; 
-cam = webcam(camName); %Assign lab camera 
-rect = [3.51000000000000, 68.5100000000000, 627.980000000000, 312.980000000000]; %Set up cropping
+%% Set up camera
+cam = webcam('Brio 100');  % Connect to webcam
 
-%% Set up game state structure measurements
-golf.locBall = [0, 0; 0, 0]; %All of the locations for Golfballs (2 MAX) 
-golf.locHole = [0, 0; 0, 0; 0, 0]; %All of the locations for Golfholes (3 MAX)
-golf.numBall = 0; %Initialize to 0
-golf.numHole = 0; 
+% Initialize golf object structure
+golf.locBall = [0, 0; 0, 0];       % Max 2 balls
+golf.locHole = [0, 0; 0, 0; 0, 0]; % Max 3 holes
+golf.numBall = 0;
+golf.numHole = 0;
 
-%% Set up images. Take photo of background and of current. 
+
+%% Define hardcoded points (top-left, top-right, bottom-right, bottom-left)
+inputPoints = [
+    8.2450  152.6606
+  637.8554  139.6263
+  638.9888  454.1482
+   15.0455  464.3489
+];
+
+%% Define output 
+outputPoints = [
+    0   0;
+    700 0;
+    700 350;
+    0   350
+];
+
+%% Compute transformation
+tform = fitgeotrans(inputPoints, outputPoints, 'projective');
+
+%% Ask FIRST if user wants to set new background
 answer1 = questdlg('Do you want to take a new background photo?', ...
-	'New Background?', ...
-	'Yes','No','No');
+    'New Background?', 'Yes','No','No');
 
-%Handle user's answer to new background image or not 
-switch answer1 
+switch answer1
     case 'Yes'
-        golf.background = imcrop(snapshot(cam), rect);
-        imwrite(golf.background, "background.png"); %Save new background
-    case 'No' 
-        golf.background = imread('background.png'); %Use last background
-end 
+        % Take background image and apply warp
+        rawBG = snapshot(cam);
+        warpedBG = imwarp(rawBG, tform);
+        
+        %figure('Name', 'Warped Background');  % Create a new figure window
+        %imshow(warpedBG);                     % Show the warped image
+        %title('Click TOP-LEFT and BOTTOM-RIGHT corners of the putting green');
 
+         %User selects two corners
+        %[x1, y1] = ginput(1);  % Top-left
+        %[x2, y2] = ginput(1);  % Bottom-right
+
+        % Build crop rectangle
+        %cropRect = [x1, y1, x2 - x1, y2 - y1];
+        %disp('Use this cropRect for future runs:');
+        %disp(cropRect);
+
+        % Crop and save background
+        cropRect = [17.2425, 170.3232, 700.1647, 349.1336];
+        golf.background = imcrop(warpedBG, cropRect);
+        imwrite(golf.background, 'background.png');
+        save('cropRect.mat', 'cropRect');  % Save crop rectangle for reuse
+
+    case 'No'
+        golf.background = imread('background.png');
+        load('cropRect.mat', 'cropRect');  % Load crop rectangle
+end
+
+%% Capture and process current image
 waitfor(msgbox("Ready to take current photo?"));
-golf.current = imcrop(snapshot(cam), rect); %Take a live picture of background 
-imwrite(golf.current, "current.png"); %Save new current
-clear('cam'); %Don't need camera anymore 
+raw = snapshot(cam);
+warped = imwarp(raw, tform);
+
+% Show warped image
+%figure('Name', 'Warped Image - Current');
+%imshow(warped);
+%title('Warped Image - Before Cropping');
+
+% Crop to putting green
+golf.current = imcrop(warped, cropRect);
+imwrite(golf.current, 'current.png');
+clear cam;
 
 %% Background Subtraction
-golf.sub = golf.current - golf.background; %Take difference for background subtraction 
+golf.sub = golf.current - golf.background;
 
-%% Fix Image to Compute Binary Image: Necessary to pick up less extreme colors
-[height,width,depth] = size(golf.current);
-sub2 = golf.sub; 
+%% Highlight motion/differences
+[height, width, ~] = size(golf.current);
+sub2 = golf.sub;
 
-% This is RGB, 3 pixels per X,Y coordinate. 0,0,0 for RGB is black, while 
-% 255,255,255 is white. See original sub image & detect if color is
-% distinct enough from old background (grey/black).
-for i=1:height
-    for j=1:width 
-        %Account for threshold.
+for i = 1:height
+    for j = 1:width
         if (golf.sub(i,j,1) > 100) || ...
            (golf.sub(i,j,2) > 100) || ...
            (golf.sub(i,j,3) > 100)
-
-            %Will Show in Green
-            sub2(i,j,:) = [175,200,175];
+            sub2(i,j,:) = [175, 200, 175];  % Mark as green
         end
     end
 end
 
 binary = im2bw(sub2);
 
-%% Erode Image: 
-%Set Morphological Operation
-SE = strel('disk',5);
+%% Morphological filtering
+SE = strel('disk', 5);
+eroded = imerode(binary, SE);
 
-erode = imerode(binary, SE);
+SE = strel('disk', 7);
+golf.subNoNoise = imdilate(eroded, SE);
 
-%% Dilate Image: Golfballs tend to not be picked up well
-% Set Morphological Operation
-SE = strel('disk',7);
+%% Get region properties
+golf.stats = regionprops(golf.subNoNoise, 'all');
 
-golf.subNoNoise = imdilate(erode, SE); %Store image with noise removal
-
-%% Call regionprops: Store data like centroids
-golf.stats = regionprops(golf.subNoNoise, 'all'); 
