@@ -21,7 +21,6 @@
 Adafruit_AHTX0 aht; 
 
 /* Initialize DHT sensor */ 
-// 'Out' or data port to digital pin #2 
 #define DHTPIN 2 // Digital pin connected to the DHT sensor 
 #define DHTTYPE DHT11 // Using the DHT11 sensor
 DHT dht(DHTPIN, DHTTYPE); 
