@@ -1,5 +1,6 @@
 /* aht20_dht11.ino
- * Temperature Sensors
+ * Task 1 - Embedded Systems & Sensors 
+ * HVAC/Smart Building
  * Joshua Silva & Richard Pressley
  *
  * Purpose: Initialize and collect temp/humidity data from the AHT20 and DHT11 Sensors 
@@ -9,22 +10,23 @@
  *
  * Bugs: Disrupting running of one sensor can impact the other. For example, unplugging the DHT11 can give the AHT20 a reading of -50.00, 0.00
  * 
- * Output is AHT_Temp,AHT_Humidity,DHT_Temp,DHT_Humidity
+ * Output format is AHT_Temp,AHT_Humidity,DHT_Temp,DHT_Humidity
  */ 
 
 #include <Adafruit_AHTX0.h> 
 #include <DHT.h>
 
-/* Initialize AHT Sensor */
+/* Initialize AHT Sensor */ 
+// SCL to A5 & SDA to A4 (Uno defaults for serial clk and serial data respectively)
 Adafruit_AHTX0 aht; 
 
 /* Initialize DHT sensor */ 
-//Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
-#define DHTPIN 2 //Digital pin connected to the DHT sensor 
-#define DHTTYPE DHT11 //Using the DHT11 sensor
+// 'Out' or data port to digital pin #2 
+#define DHTPIN 2 // Digital pin connected to the DHT sensor 
+#define DHTTYPE DHT11 // Using the DHT11 sensor
 DHT dht(DHTPIN, DHTTYPE); 
 
-//Initialize previous values in case of sensor failure
+// Initialize previous values in case of sensor failure
 float prev_a_temp = 0.00; 
 float prev_a_humidity = 0.00; 
 float prev_d_temp = 0.00;
@@ -32,14 +34,14 @@ float prev_d_humidity = 0.00;
 
 /* Setup both sensors */
 void setup() {
-  Serial.begin(9600); //Could try 115200 (more for heavy data)
+  Serial.begin(9600);
 
   if (!aht.begin()) {
     Serial.println("Could not find AHT, please check wiring");
     while (1) delay(10);
   } 
 
-  dht.begin(); //Cannot error check DHT11 setup, it returns a void. Check for later error messages or a constant 0.0 in Serial Monitor
+  dht.begin(); // Cannot error check DHT11 setup, it returns a void. Check for later error messages or a constant 0.0 in Serial Monitor
 }
 
 /* Read data from both sensors every second */
@@ -47,9 +49,9 @@ void loop() {
   
   /* AHT Humidity and Temp */
   sensors_event_t a_humidity, a_temp;
-  aht.getEvent(&a_humidity, &a_temp);// populate temp and humidity objects with fresh data 
+  aht.getEvent(&a_humidity, &a_temp); // populate temp and humidity objects with fresh data 
 
-  //If AHT20 sensor fails (rare), report previous valid data 
+  // If AHT20 sensor fails (rare), report previous valid data 
   if (isnan(a_temp.temperature) || (a_temp.temperature <= -50.00)) a_temp.temperature = prev_a_temp; 
   else prev_a_temp = a_temp.temperature; 
 
@@ -60,7 +62,7 @@ void loop() {
   float d_humidity = dht.readHumidity();
   float d_temp = dht.readTemperature(); //Reads in Celsius(default) 
 
-  //If DHT11 sensor fails (rare), report previous valid data. Would like to find a good temperature that indicates failure, usually 0.3 to 0.5 is failure but that's about freezing
+  // If DHT11 sensor fails (rare), report previous valid data. Would like to find a good temperature that indicates failure, usually 0.3 to 0.5 is failure but that's about freezing
   if (isnan(d_temp) || d_temp <= 0.50) d_temp = prev_d_temp; 
   else prev_d_temp = d_temp; 
 
