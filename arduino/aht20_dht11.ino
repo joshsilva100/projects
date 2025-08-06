@@ -78,6 +78,6 @@ void loop() {
   Serial.print(d_temp); Serial.print(F(","));
   Serial.print(d_humidity);
   
-  Serial.println();
+  Serial.print("\n");
   delay(1000);
 }
