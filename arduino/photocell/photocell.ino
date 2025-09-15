@@ -9,7 +9,7 @@
         not meant to determine differences between 'bright' and 'really bright.' Use pulldown resistors 
         to implement voltage divider, measure voltage across pulldown resistors.
 
-  Output Format is: brightRoom_light,darkRoom_light
+  Output Format is: brightRoom_light,brightRoom_voltage, darkRoom_light,darkRoom_voltage
 */ 
 
 #define brightRoom A1 // Analog1 input w/ 1K pulldown resistor
@@ -27,8 +27,12 @@ void loop() {
   // Handling output of the photocells. Testing resistors values for both intended for differing default lightings
   Serial.print(analogRead(brightRoom)); 
   Serial.print(F(",")); 
+  Serial.print(analogRead(brightRoom) * (5.0 / 1023.0)); 
+  Serial.print(F(","));
   Serial.print(analogRead(darkRoom)); 
-  Serial.print("\n");
+  Serial.print(F(",")); 
+  Serial.print(analogRead(darkRoom) * (5.0 / 1023.0)); 
+  Serial.print("\n"); 
 
   delay(1000);
 }
