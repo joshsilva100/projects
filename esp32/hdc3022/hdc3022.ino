@@ -4,7 +4,9 @@
  *
  * Purpose: Initialize and collect temp/humidity data from the Adafruit HDC3022 sensor
  * 
- * Output format is Temperature,Humidity
+ * Output format is Temperature,Humidity 
+ * 
+ * More info: https://github.com/adafruit/Adafruit_HDC302x/tree/main
  */ 
 
 //Same as HDC3021
