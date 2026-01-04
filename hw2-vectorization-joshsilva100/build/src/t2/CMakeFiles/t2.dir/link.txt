@@ -1,0 +1,1 @@
+/software/slurm/spackages/linux-rocky8-x86_64/gcc-12.2.0/gcc-13.2.0-syd6gd5bzt4ugi5fc6dh2efw46jakd6t/bin/gcc CMakeFiles/t2.dir/t2.c.o CMakeFiles/t2.dir/t2main.c.o -o t2
